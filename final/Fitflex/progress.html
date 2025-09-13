@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Progress Tracker</title>
+    <link rel="stylesheet" href="./progress.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>📊 Fitness Progress Tracker</h1>
+
+        <!-- Input Form -->
+        <form id="progressForm">
+            <input type="date" id="date" required>
+            <input type="number" id="value" placeholder="Enter workout minutes" required>
+            <button type="submit">Add Progress</button>
+        </form>
+
+        <!-- Chart -->
+        <canvas id="progressChart"></canvas>
+    </div>
+    <a href="index.html" class="btn">⬅ Back to Home</a>
+    <script src="./progress.js"></script>
+</body>
+<footer>
+    <p>© 2025 Fitness Hub | Stay Healthy, Stay Strong 💥</p>
+  </footer>
+
+</html>

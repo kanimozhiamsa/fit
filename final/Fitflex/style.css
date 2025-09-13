@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  top: 0;
+  
+ 
+}
+
+/* Logo section */
+.Logo {
+  display: flex;
+  
+ }
+
+img{
+  height: 40px;
+  margin-right: 10px;
+}
+
+.Logo h1 {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+
+}
+
+/* Navbar links */
+nav,ul{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 60%;
+}
+
+nav,ul,li {
+  margin-left:20px;
+}
+
+nav,ul,li,a {
+  text-decoration: none;
+  background:none;
+  background-color:black;
+  color: white;
+  font-weight: bold;
+  
+}
+
+nav,ul,li,a:hover {
+  color: #00f2fe; /* light blue hover */
+}
+
+
+
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.hero button {
+  background: #1abc9c;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #16a085;
+}
+
+/* Features */
+.features {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
+.feature {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  background: #e2e2e2;
+}
+/*progress*/
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #1abc9c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* About */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #ecf0f1;
+}
+/* Contact */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input, .contact textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background: #16a085;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}

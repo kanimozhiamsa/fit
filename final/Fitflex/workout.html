@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .workout-card {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .workout-card:hover {
+      transform: scale(1.02);
+    }
+    .workout-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .workout-details {
+      display: none;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    ul {
+      margin: 5px 0;
+    }
+    li {
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💪 Workout Plans</h1>
+    <p>Select a category to view detailed plans</p>
+  </header>
+
+  <div class="container">
+
+    <div class="workout-card" onclick="toggleDetails('fullbody')">
+      <div class="workout-title">🏋️ Full Body Workout</div>
+      <div id="fullbody" class="workout-details">
+        <ul>
+          <li>Push-ups - 3 sets of 15</li>
+          <li>Squats - 3 sets of 20</li>
+          <li>Plank - 3 sets of 1 min</li>
+          <li>Burpees - 3 sets of 10</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="workout-card" onclick="toggleDetails('abs')">
+      <div class="workout-title">🔥 Abs Workout</div>
+      <div id="abs" class="workout-details">
+        <ul>
+          <li>Crunches - 3 sets of 20</li>
+          <li>Leg Raises - 3 sets of 15</li>
+          <li>Russian Twists - 3 sets of 20</li>
+          <li>Bicycle Crunches - 3 sets of 20</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="workout-card" onclick="toggleDetails('biceps')">
+      <div class="workout-title">💪 Biceps Workout</div>
+      <div id="biceps" class="workout-details">
+        <ul>
+          <li>Bicep Curls - 3 sets of 12</li>
+          <li>Hammer Curls - 3 sets of 12</li>
+          <li>Chin Ups - 3 sets of 8</li>
+          <li>Concentration Curls - 3 sets of 10</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="workout-card" onclick="toggleDetails('triceps')">
+      <div class="workout-title">💪 Triceps Workout</div>
+      <div id="triceps" class="workout-details">
+        <ul>
+          <li>Dips - 3 sets of 12</li>
+          <li>Overhead Triceps Extension - 3 sets of 10</li>
+          <li>Close Push-ups - 3 sets of 12</li>
+          <li>Kickbacks - 3 sets of 12</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="workout-card" onclick="toggleDetails('legs')">
+      <div class="workout-title">🏃 Legs Workout</div>
+      <div id="legs" class="workout-details">
+        <ul>
+          <li>Squats - 3 sets of 20</li>
+          <li>Lunges - 3 sets of 12 each leg</li>
+          <li>Calf Raises - 3 sets of 20</li>
+          <li>Leg Press - 3 sets of 15</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      let details = document.getElementById(id);
+      if (details.style.display === "block") {
+        details.style.display = "none";
+      } else {
+        details.style.display = "block";
+      }
+    }
+  </script>
+   <a href="index.html" class="btn">⬅ Back to Home</a>
+</body>
+</html>
